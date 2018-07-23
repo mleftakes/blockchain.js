@@ -1,3 +1,3 @@
-leftaChain
+# leftaChain
 
-Basic blockchain application using javascript
+## Basic blockchain application using javascript
