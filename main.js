@@ -34,7 +34,7 @@ class Blockchain{
     }
 
     isChainValid(){
-        for(let i = 1; i< this.chain.length; i++){
+        for(let i = 1; i < this.chain.length; i++){
             const currentBlock = this.chain[i];
             const previousBlock = this.chain[i-1];
 
@@ -54,8 +54,14 @@ class Blockchain{
 let mikeChain = new Blockchain();
 mikeChain.addBlock(new Block(1, "07/23/2018", { amount: 4} ));
 mikeChain.addBlock(new Block(2, "07/23/2018", { amount: 10} ));
+mikeChain.addBlock(new Block(2, "07/23/2018", { amount: 25} ));
+mikeChain.addBlock(new Block(2, "07/23/2018", { amount: 54} ));
+mikeChain.addBlock(new Block(2, "07/23/2018", { amount: 340} ));
+mikeChain.addBlock(new Block(2, "07/23/2018", { amount: 310} ));
+mikeChain.addBlock(new Block(2, "07/23/2018", { amount: 2210} ));
 
 
-console.log("Is blockchian valid?" + mikeChain.isChainValid());
+
+console.log("Is blockchian valid? " + mikeChain.isChainValid());
 
 console.log(JSON.stringify(mikeChain, null, 4))
